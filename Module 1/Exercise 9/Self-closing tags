@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap9</title>
+</head>
+<body>
+    <h1>Học lập trình cùng tôi</h1>
+    <nav>
+        <a href="#">Trang chủ</a>
+        <a href="#">Bài viết</a>
+        <a href="#">Liên hệ</a>
+    </nav>
+    <hr>
+    <main>
+        <section style="display: flex; justify-content: space-between; align-items: flex-start;">
+            <section>
+                 <h2>Bài viết mới nhất</h2>
+                <article>
+                <h3>Lộ trình học front end web</h3>
+                <p>Nội dung bài viết...</p>
+                </article>
+            </section>
+
+        <aside>
+            <h3>
+                Thông tin phụ
+            </h3>
+            <img src="https://statictuoitre.mediacdn.vn/thumb_w/640/2017/7-1512755474943.jpg"
+                alt="Đây là một chiếc ảnh đẹp"
+                width="200"
+                height="150">
+        </aside>
+        </section>
+        <hr>
+
+        <section>
+            <strong>Đăng ký nhận bản tin mới nhất</strong>
+            <br>
+            <input type="email" placeholder="Nhập email của bạn">
+            <input type="submit" value="Đăng ký">
+        </section>
+    </main>
+    <footer>
+        <p>
+            &copy; Nguyễn Ngọc Minh
+        </p>
+    </footer>
+</body>
+</html>
