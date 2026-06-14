@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap5</title>
+</head>
+<body>
+    <header>
+        <h1>Khảo sát dịch vụ khách hàng</h1>
+    </header>
+
+    <main>
+        <form action="../BaiTap3.html" method="get">
+        <div>
+       <label for="age">Độ tuổi của bạn: </label>
+       <input id="age" name="age" type="number" style="width:75px">
+       </div><br>
+
+       <div>
+        <fieldset>
+            <legend>Giới tính của bạn là gì?</legend>
+            <input id="male" name ="gender" type="radio">
+            <label for="male">Nam</label>
+            <input id="female" name="gender" type="radio">
+            <label for="female">Nữ</label>
+            <input id="other" name = "gender" type="radio">
+            <label for="other">Khác</label>
+        </fieldset>
+        </div><br>
+
+        <div>
+            <fieldset>
+                <legend>Dịch vụ bạn đang quan tâm(có thể chọn nhiều)</legend>
+                <input id="website" name="service" type="checkbox">
+                <label for="website">Website</label>
+                <input id="mobile" name="service" type="checkbox">
+                <label for="mobile">Mobile App</label>
+                <input id="marketing" name="service" type="checkbox">
+                <label for="marketing">Marketing</label>
+            </fieldset>
+        </div>
+        <div>
+            <label for="quocgia">Quốc gia mà bạn đang sinh sống</label>
+            <select name="quocgia" id="quocgia">
+                <option value="vuilongchon">-- Vui lòng chọn --</option>
+                <option value="Việt Nam">Việt Nam</option>
+                <option value="Nhật Bản">Nhật Bản</option>
+                <option value="Hoa Kỳ">Hoa Kỳ</option>
+            </select>
+        </div><br>
+            <button type="submit">Gửi thông tin đi</button>
+        </form>
+    </main>
+</body>
+</html>
