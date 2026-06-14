@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap6</title>
+</head>
+<body>
+    <header>
+        <h1>Hồ sơ thông tin cá nhân</h1>
+    </header><br>
+    <main>
+        <form action="./BaiTap5.html" method = "get">
+        <section>
+            <fieldset>
+                <legend>Thông tin cá nhân</legend>
+                <section>
+                <label for="name">Tên: </label>
+                <input id="name" name="ten" type="text" placeholder="Nhập họ và tên...">
+                </section><br>
+
+                <section>
+                <label for="date">Ngày sinh: </label>
+                <input id="date" name="Ngaysinh" type="date">
+                </section>
+            </fieldset>
+        </section><br>
+
+        <section>
+            <fieldset>
+                <legend>
+                    Thông tin liên hệ
+                </legend>
+                <section>
+                    <label for="email">Email: </label>
+                    <input id="email" name="email" type="email">
+                </section><br>
+
+                <section>
+                    <label for="sdt">Số điện thoại: </label>
+                    <input id="sdt" name="telephone" type="tel">
+                </section>
+            </fieldset>
+                <section>
+                    <p>Ghi chú bổ sung</p>
+                    <textarea id = "note" name="ghichu" rows="5" cols="40" placeholder ="Nhập ghi chú của bạn tại đây..." ></textarea>
+                </section>
+        </section>
+        <br>
+        <button type="submit">Lưu hồ sơ</button>
+        </form>
+    </main>
+</body>
+</html>
