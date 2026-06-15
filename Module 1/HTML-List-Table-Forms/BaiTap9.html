@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap9</title>
+</head>
+<body>
+    <header>
+        <h1>Nộp hồ sơ ứng tuyển</h1>
+    </header>
+    
+    <main>
+        <form action="BaiTap5.html" method="post" enctype="multipart/form-data">
+            <fieldset>
+                <legend>Thông tin liên hệ</legend>
+                <div>
+                    <label for="name">Họ và tên: </label>
+                    <input id="name" name="name" type="text">
+                </div>
+                <br>
+                <div>
+                    <label for="sdt">Số điện thoại</label>
+                    <input id="sdt" name="sdt" type="tel" pattern="[0][1-9][0-9]{8}" title="Số ĐT phải bắt đầu bằng 0, chữ số thứ 2 là 1-9 và theo sau là 8 số">
+                </div>
+            </fieldset>
+            <br>
+            <fieldset>
+                <legend>Hồ sơ đính kèm</legend>
+                <label for="upload">Tải lên CV(Định dạng PDF/Word)</label>
+                <input id="upload" name="upload" type="file" accept=".pdf,.doc,.docx" required>
+            </fieldset>
+            <br>
+            <button type="submit">Nộp hồ sơ</button>
+        </form>
+    </main>
+</body>
+</html>
