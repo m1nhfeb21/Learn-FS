@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <h1>Đăng Ký Đặt Vé Sự Kiện Âm Nhạc</h1>
+    </header>
+
+    <main>
+        <form action="BaiTap5.html" method="get">
+        <div>
+            <label for="name">Họ và tên: </label>
+            <input id="name" name="name" type="text" placeholder="Nhập họ và tên" minlength="3" maxlength="50">
+        </div>
+        <br>
+
+        <div>
+            <label for="soluong">Số lượng vé:</label>
+            <input id="soluong" name="soluong" type="number" style="width:60px" min="1" max="5">
+        </div>
+        <br>
+
+        <div>
+            <label for="vip">Mã vé VIP(Đã cấp sẵn)</label>
+            <input id="vip" name="vip" readonly value="MUSIC-VIP-2026">
+        </div>
+        <br>
+
+        <div>
+            <label for="sale">Mã giảm giá nội bộ</label>
+            <input id ="sale" name="sale" disabled placeholder="NOT-ELIGIBLE">
+        </div>
+        <br>
+
+        <button type="submit">Xác nhận đặt vé</button>
+        </form>
+    </main>
+</body>
+</html>
