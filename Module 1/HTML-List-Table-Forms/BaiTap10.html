@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap10</title>
+</head>
+<body>
+    <main>
+    <div>
+    <h2> Chi tiết Hóa đơn Mua hàng</h2>
+    <table>
+        <caption>Hóa đơn điện tử#HD-20260310</caption>
+        <thead>
+            <tr>
+            <th>Tên sản phẩm</th>
+            <th>Chi tiết</th>
+            <th>Đơn giá</th>
+            <th>Thành tiền</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>Áo thun Lập trình viên</td>
+                <td>
+                    <ul>
+                        <li>Màu sắc: Đen</li>
+                        <li>Kích cỡ: XL</li>
+                        <li>Chất liệu: Cotton 100%</li>
+                    </ul>
+                </td>
+                <td>250.000đ</td>
+                <td>250.000đ</td>
+            </tr>
+
+            <tr>
+                <td>Bàn phím cơ bản</td>
+                <td>
+                    <ul>
+                        <li>Switch: Red</li>
+                        <li>Layout: TKL</li>
+                    </ul>
+                </td>
+                <td>800.000</td>
+                <td>800.000</td>
+            </tr>
+
+            <tr>
+                <td colspan="4">
+                    <strong>Tổng tiền thanh toán: 1.050.000đ</strong>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+    </div>
+    <hr>
+    
+    <form action="BaiTap5.html" method="get">
+    <div>
+    <h2>Đánh giá trải nghiệm mua hàng</h2>
+    <fieldset>
+        <legend>Phản hồi của bạn</legend>
+        <label for="mucdo">Mức độ hài lòng của bạn: </label>
+        <select id="mucdo" name="mucdo">
+          <option value="nostar">-- Vui lòng chọn số sao --</option>
+          <option value="1sao">1 &star;</option>
+          <option value="2sao">2 &star;</option>
+          <option value="3sao">3 &star;</option>
+          <option value="4sao">4 &star;</option>
+          <option value="5sao">5 &star;</option>
+        </select>
+        <br>
+        <br>
+        <label for="nhanxet">Lời nhận xét chi tiết: </label><br>
+        <textarea id="nhanxet" name="nhanxet" rows="5" cols="50" placeholder="Hãy chia sẻ trải nghiệm của bạn về sản phẩm và dịch vụ..."></textarea>
+    </fieldset>
+    <button type="submit">Gửi phản hồi</button>
+    </div>
+    </form>
+    </main>
+
+</body>
+</html>
