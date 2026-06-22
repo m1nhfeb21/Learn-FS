@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap8</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+   <section class="blockquote">
+        <p id="trietly"><em>Đột phá không đến từ việc cố gắng tạo ra thứ gì đó lớn lao, 
+            mà từ việc liên tục giải quyết các vấn đề nhỏ nhất xung quanh 
+            cuộc sống của bạn. Khi bạn tập trung xây dựng sản phẩm 
+            mang lại giá trị thực sự cho người dùng, những điều vĩ đại sẽ tự nhiên theo sau.</em> </p>
+        <p id="typhu">- Tỷ phú công nghệ- </p>
+   </section> 
+</body>
+</html>
