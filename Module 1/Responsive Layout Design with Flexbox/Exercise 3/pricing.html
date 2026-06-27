@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: lightgray;
+            margin: 0;
+        }
+        .pricing_card{
+            border-radius: 5px;
+            background: white;
+            display: flex;
+            align-content: space-between;
+            align-items: center;
+            box-sizing: border-box;
+            width: 700px;
+            height: 400px;
+            margin: 60px auto;
+            padding: 40px 30px;
+            justify-content: space-between;
+            
+        }
+        .card{
+            border-radius: 8px;
+            border: 1px solid gray;
+            padding: 20px;
+            text-align: center;
+            width: 190px;
+        }
+        .card:nth-child(2){
+            align-self: flex-start;
+            background: rgb(0, 145, 255);
+            color: white;
+            box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.04);
+        }
+        button{
+            background: rgb(12, 1, 78);
+            color: white;
+            padding: 10px;
+            width: 100%;
+            border-radius: 6px;
+            font-weight: 600;
+            border: none;
+        }
+
+        .card:nth-child(2) button{
+            background: white;
+            color: rgb(0, 149, 255);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="pricing_card">
+        <section class ="card">
+            <h3>Cơ bản</h3>
+            <h2>Miễn phí</h2>
+            <p>1 Dự án</p>
+            <p>100MB Lưu trữ</p>
+            <p>Hỗ trợ Email</p>
+            <button class="chon" type="button">Bắt đầu ngay</button>
+        </section>
+
+        <section class="card">
+            <h3>Chuyên nghiệp</h3>
+            <h2> 99.000đ/th</h2>
+            <p>Dự án Không Giới Hạn</p>
+            <p>10GB Lưu trữ</p>
+            <p>Hỗ trợ 24/7</p>
+            <p>Domain Tùy chỉnh</p>
+            <button class="chon" type="button">Nâng cấp</button>
+        </section>
+
+        <section class="card">
+            <h3>Doanh nghiệp</h3>
+            <h2>Liên hệ</h2>
+            <p>Gói tùy chọn đầy đủ</p>
+            <p>Dung lượng caon nhất</p>
+            <p>Tư vấn riêng biệt</p>
+            <button class="chon" type="button">Tìm hiểu thêm</button>
+        </section>
+    </div>
+</body>
+</html>
