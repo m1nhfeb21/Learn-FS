@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap2</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        h2{
+            text-align:center;
+        }
+        .project{
+            width: 700px;
+            margin: 30px auto;
+            height: 220px;
+            display: flex;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+            object-fit: cover;
+        }
+
+        .project img{
+            width: 300px;
+            height: 100%;
+        }
+
+        .project .content{
+            padding: 30px;
+        }
+        .project p{
+            line-height: 1.6;
+        }
+        .reverse .content{
+            order: 1;
+        }
+        .reverse img{
+            order: 2;
+        }
+    </style>
+</head>
+<body>
+    <h2>Các Dự Án Nổi Bật</h2>
+    <div class="project">
+        <img src="/BaiTapThucHanh/hinh-anh-van-phong-lam-viec-hien-dai-1-1.jpg" alt="dashboard dữ liệu">
+        <div class="content">
+            <h3>Dự án Web App E-commerce</h3>
+            <p>Hệ thống quản lý bán hàng toàn diện, tích hợp thanh toán
+            trực tuyến, giỏ hàng minh bạch và quản lý kho thông minh.
+            Ứng dụng xây dựng trên React, đem lại tốc độ nhanh và
+            trải nghiệm mượt mà.
+            </p>
+        </div>
+    </div>
+     <div class="project reverse">
+        <img src="/BaiTapThucHanh/hinh-anh-van-phong-lam-viec-hien-dai-1-1.jpg" alt="văn phòng">
+
+        <div class="content">
+            <h3>Dự án Data Dashboard ERP</h3>
+            <p>
+                Bảng điều khiển phân tích dữ liệu trực quan cho doanh nghiệp.
+                Cho phép người dùng tùy chỉnh báo cáo, thống kê doanh thu
+                theo thời gian thực với biểu đồ tương tác 3D mạnh mẽ.
+            </p>
+        </div>
+    </div>
+
+</body>
+</html>
