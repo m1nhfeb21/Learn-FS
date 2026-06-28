@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap6</title>
+    <style>
+        *{
+            font-family: Arial, Helvetica, sans-serif;
+            box-sizing: border-box;
+        }
+        body{
+            background: lightgray;
+            margin: 0;
+            text-align: center;
+        }
+        .card{
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+            max-width: 1000px;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 20px;
+        }
+        .doingu{
+            background: white;
+            border-radius: 7px;
+            border-top:5px solid rgb(0, 248, 190);
+            padding: 20px;
+            flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 260px;
+
+        }
+
+        h4{
+            font-size: 13px;
+            font-weight: 700;
+            color:rgb(30, 218, 161);
+            line-height: 1.6;
+        }
+        .avatar{
+            width: 80px;
+            height: 80px;
+            background: rgb(230,238,240);
+            border-radius: 50%;
+            margin: 0 auto 20px;
+            line-height: 80px;
+            font-size: 28px;
+        }
+    </style>
+</head>
+<body>
+    <h3>Đội Ngũ Phát Triển</h3>
+    <div class="card">
+        <section class="doingu">
+            <div class="avatar">👨‍💻</div>
+            <h3>Trần Tuấn Anh</h3>
+            <h4>FRONTEND DEVELOPER</h4>
+            <p>Chuyển gia về ReactJS và UI/UX với hơn 5 năm kinh nghiệm.
+                Đam mê thiết kế các giao diện người dùng hiện đại và hiệu suất cao
+            </p>
+        </section>
+
+        <section class="doingu">
+            <div class="avatar">👩‍💼</div>
+            <h3>Nguyễn Ngọc Mai</h3>
+            <h4>PROJECT MANAGER</h4>
+            <p>Điều phối viên dự án tài ba, quản lý rủi ro và điều hướng team vượt qua những thử thách công nghệ phức tạp mỗi ngày.</p>
+        </section>
+
+        <section class="doingu">
+            <div class="avatar">👨‍🔧</div>
+            <h3>Lê Bá Khánh</h3>
+            <h4>BACKEND ENGINEER</h4>
+            <p>Xây dựng hệ thống Data phức tạp và kiến trúc 
+                Microservices, Nodejs và AWS là bạn đồng hành không thể thiếu.
+            </p>
+        </section>
+    </div>
+</body>
+</html>
