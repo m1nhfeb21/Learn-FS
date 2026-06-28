@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BaiTap5</title>
+
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background: rgba(0, 195, 255, 0.093);
+            padding: 50px 16px;
+            margin: 0;
+        }
+
+        .schedule{
+            background: white;
+            display: flex;
+            width: 800px;
+            border-radius: 6px;
+            max-width: 100%;
+            margin: 0 auto;
+            overflow: hidden;
+            box-shadow: 0 8px 25px rgba(0, 0, 0, 0.08);
+
+        }
+        .content, .information{
+            width: 50%;
+        }
+
+        .content{
+            background: rgba(0, 136, 255, 0.853);
+            color: white;
+            padding: 50px 55px;
+        }
+
+        .content h3{
+            font-size: 28px;
+            margin-top: 0;
+        }
+
+        .content p{
+            line-height: 1.6;
+        }
+        .information{
+            padding: 40px;
+        }
+        .information h3{
+            text-align: center;
+            font-size: 22px;
+            margin-top:0;
+            color: #333;
+        }
+
+        label{
+            display: block;
+            margin: 16px 0 8px;
+            font-weight: bold;
+        }
+        
+        input, select{
+            width: 100%;
+            height: 38px;
+            padding: 0 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        button{
+            background: rgb(8, 168, 59);
+            border: none;
+            color: white;
+            width: 100%;
+            font-weight: 700;
+            height: 44px;
+            margin-top: 24px;
+            cursor: pointer;
+        }
+        button:hover {
+            background: rgb(6, 145, 50);
+        }
+
+        @media(max-width: 767px){
+            .schedule{
+                flex-direction: column;
+                display: flex;
+                flex-wrap: wrap;
+
+            }
+            .content, .information{
+                width: 100%;
+            }
+            .information{
+                order: 1;
+            }
+
+            .content{
+                order: 2;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="schedule">
+        <div class="content">
+            <h3>Nha Khoa Smile Care</h3>
+            <p>Nụ cười tự tin là chìa khóa mở ra những cơ hội mới 
+                Chúng tôi cam kết mang lại trải nghiệm chăm sóc răng miệng
+                không đau với công nghệ tiên tiến nhất đến từ Châu Âu.
+            </p>
+
+            <p>Đội ngũ bác sĩ chuyên khoa hơn 10 năm kinh nghiệm. 
+                Trang thiết bị X-Quang 3D hiện đại nhất. Vô trùng tuyệt đối
+                theo tiêu chuẩn quốc tế. Bảo hành trọn đời dịch vụ răng sứ.
+            </p>
+        </div>
+
+        <form class="information">
+            <h3>Đặt Lịch Khám Ngay</h3>
+            <label for="hovaten">Họ và tên</label>
+            <input id="hovaten" type="text" placeholder="Nhập tên của bạn">
+
+            <label for="sđt">Số điện thoại</label>
+            <input id="sđt" type="tel" placeholder="Nhập số điện thoại cần liên hệ">
+
+            <label for="tuvan">Dịch vụ cần tư vấn</label>
+            <select name="tuvan" id="tuvan">
+                <option>--Chọn dịch vụ cần tư vấn--</option>
+                <option>Khám tổng quát & Lấy cao răng</option>
+            </select>
+            <button class = "confirm" type="submit">Xác Nhận Đặt Lịch</button>
+        </form>
+
+    </div>
+</body>
+</html>
