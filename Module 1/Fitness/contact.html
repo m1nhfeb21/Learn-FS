@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FitLife Premium Fitness Club</title>
+    <link rel="stylesheet" href="/css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  </head>
+  <body>
+    <header>
+      <nav class="thanhdieuhuong">
+        <div class="brand">
+          <a href="index.html"><span>Fit</span>Life</a>
+        </div>
+        <div id="cacthedieuhuong">
+          <a class="card" href="classes.html">Lịch học & Bộ môn</a>
+          <a class="card" href="contact.html">Liên hệ</a>
+        </div>
+      </nav>
+    </header>
+    <main class="bg-[#f6f8f3] min-h-screen py-12 px-4">
+      <section class="max-w-5xl mx-auto">
+        <div class="text-center mb-10">
+          <h1 class="text-3xl md:text-4xl font-bold text-[#243b2f]">
+            Liên hệ với<span class="text-green-700"> Fit</span>Life
+          </h1>
+          <p class="mt-3 text-gray-600">
+            Gửi thông tin cho chúng tôi để được tư vấn gói tập, lịch học hoặc
+            huấn luyện viên phù hợp.
+          </p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <div class="bg-white rounded-xl shadow-md p-6">
+            <h2 class="text-2xl font-bold text-[#243b2f] mb-4">
+              Thông tin liên hệ
+            </h2>
+
+            <div class="space-y-4 text-gray-700">
+              <p>
+                <i class="fa-solid fa-location-dot text-green-700 mr-2"></i>
+                Thủ đức, TP. Hồ Chí Minh
+              </p>
+
+              <p>
+                <i class="fa-solid fa-phone text-green-700 mr-2"></i>
+                0123 456 789
+              </p>
+
+              <p>
+                <i class="fa-solid fa-envelope text-green-700 mr-2"></i>
+                ankaramessi@gmail.com
+              </p>
+
+              <p>
+                <i class="fa-solid fa-clock text-green-700 mr-2"></i>
+                05:00 - 22:00, Thứ 2 - Chủ nhật
+              </p>
+            </div>
+
+            <div
+              class="mt-6 bg-green-50 border-1-4 border-green-700 p-4 rounded"
+            >
+              <p class="text-sm text-gray-700">
+                FitLife sẽ phản hồi trong vòng 24 giờ sau khi nhận được thông
+                tin của bạn.
+              </p>
+            </div>
+          </div>
+
+          <form
+            action="#"
+            method="post"
+            class="bg-white rounded-lg shadow-md p-6"
+          >
+            <h2 class="text-2xl font-bold text-[#243b2f] mb-4">Gửi tin nhắn</h2>
+
+            <div class="mb-4">
+              <label for="fullname" class="block font-semibold mb-1">
+                Họ và tên
+              </label>
+              <input
+                type="text"
+                id="fullname"
+                name="fullname"
+                required
+                placeholder="Nhập họ và tên của bạn"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="phone" class="block font-semibolc mb-1">
+                Số điện thoại
+              </label>
+              <input
+                type="tel"
+                id="phone"
+                name="phone"
+                required
+                placeholder="Ví dụ: 0123456789"
+                patern="[0][0-9]{9}"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="email" class="block font-semibold mb-1">
+                Email
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="example@gmail.com"
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-green-600"
+              />
+            </div>
+
+            <div class="mb-4">
+              <label for="topic" class="block font-semibold mb-1">
+                Bạn muốn liên hệ về vấn đề gì?
+              </label>
+              <select
+                id="topic"
+                name="topic"
+                required
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 bg-white focus:outline-none focus:ring-2 focus:ring-green-600"
+              >
+                <option>-- Chọn nội dung liên hệ --</option>
+                <option>Tư vấn gói tập</option>
+                <option>Đăng ký học thử</option>
+                <option>Hỏi về lịch học</option>
+                <option>Tư vấn huấn luyện viên cá nhân</option>
+                <option>Góp ý / phản hồi</option>
+                <option>Khác</option>
+              </select>
+            </div>
+
+            <div class="mb-4">
+              <p class="block font-semiblod mb-2">Bạn muốn được liên hệ qua:</p>
+
+              <div class="flex gap-4">
+                <label class="flex items-center-gap-2">
+                  <input
+                    type="radio"
+                    name="contactMethod"
+                    value="phone"
+                    checked
+                  />
+                  Điện thoại
+                </label>
+
+                <label class="flex items-center gap-2">
+                  <input type="radio" name="contactMethod" value="email" />
+                  Email
+                </label>
+              </div>
+            </div>
+
+            <div class="mb-5">
+              <label for="message" class="block font-semibold mb-1"
+                >Nội dung</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Nhập nội dung bạn muốn gửi..."
+                class="w-full border border-gray-300 rounded-lg px-4 py-2 resize-none focus:outline-none focus:ring-2 focus:ring-green-600"
+              ></textarea>
+            </div>
+
+            <button
+              type="submit"
+              class="w-full bg-green-700 text-white font-bold py-3 rounded-lg hover:bg-green-800 transition"
+            >
+              Gửi liên hệ
+            </button>
+          </form>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="chantrang">
+        <div class="platforms">
+          <h3>Theo dõi chúng tôi trên mọi nền tảng</h3>
+          <div class="socials">
+            <a href="#" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+
+            <a href="#" aria-label="Youtube">
+              <i class="fa-brands fa-youtube"></i>
+            </a>
+
+            <a href="#" aria-label="Facebook">
+              <i class="fa-brands fa-facebook-f"></i>
+            </a>
+
+            <a href="#" aria-label="TikTok">
+              <i class="fa-brands fa-tiktok"></i>
+            </a>
+          </div>
+        </div>
+
+        <div class="logo">
+          <h2><span>Fit</span>Life</h2>
+          <p class="tagline">FITNESS COMMUNITY</p>
+          <p class="copyright">&copy; 2026 Nguyễn Ngọc Minh</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>

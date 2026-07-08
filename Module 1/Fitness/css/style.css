@@ -1,0 +1,762 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  background: #f6f8f3;
+  color: #243b2f;
+  line-height: 1.6;
+}
+
+.thanhdieuhuong {
+  display: flex;
+  background: #89787185;
+  padding: 5px 10px;
+  /* border-bottom: 1px solid #dbe7d3; */
+  box-shadow: 0 4px 16px rgba(70, 100, 80, 0.08);
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.433);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.45);
+}
+
+.card {
+  text-decoration: none;
+  color: white;
+  margin-left: 20px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.brand a {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 44px;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: 1px;
+  color: #234236;
+  margin: 0;
+  text-decoration: none;
+}
+
+.brand span {
+  color: #2f8f5b;
+  font-size: 54px;
+  letter-spacing: 2px;
+  font-weight: 800;
+}
+.gioithieu {
+  background:
+    linear-gradient(rgba(47, 80, 65, 0.55), rgba(47, 80, 65, 0.55)),
+    url("../gym.png");
+  background-size: cover;
+  background-position: center;
+  height: 520px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.thongtinclb {
+  color: white;
+  max-width: 700px;
+}
+
+.hero-logo {
+  font-size: 150px;
+  margin: 0;
+  line-height: 1;
+  letter-spacing: 8px;
+  font-weight: 900;
+}
+
+.thongtinclb h1 {
+  font-size: 42px;
+  margin: 20px 0;
+  color: white;
+}
+
+.thongtinclb p:not(.hero-logo) {
+  font-size: 18px;
+  font-weight: 600;
+}
+
+#thamgia {
+  background: #f4a261;
+  color: white;
+  border: none;
+  padding: 15px 34px;
+  border-radius: 6px;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#thamgia:hover {
+  background: #e88f48;
+}
+
+.hero-logo span {
+  color: green;
+}
+
+.thongdiep {
+  width: 90%;
+  max-width: 1400px;
+  margin: 80px auto;
+  padding: 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 70px;
+}
+
+.noidung-thongdiep {
+  width: 48%;
+}
+
+.thongdiep img {
+  width: 500px;
+  background-position: right;
+}
+
+.thongdiep #truongcaulacbo {
+  width: 100%;
+}
+
+#truongcaulacbo {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 34px;
+  font-style: italic;
+  font-weight: 600;
+  line-height: 1.25;
+  color: #222;
+  margin-top: 45px;
+}
+
+.anh-thaydoi {
+  width: 48%;
+  max-width: 650px;
+  display: block;
+}
+
+#danhsachcacgoi {
+  background: rgba(222, 184, 135, 0.436);
+  padding: 30px 80px;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: 40px;
+}
+
+.tieude-khoahoc {
+  width: 100%;
+  text-align: center;
+  font-size: 35px;
+  margin: 0 0 20px;
+}
+
+.danhsach {
+  background: white;
+  width: 30%;
+  border-radius: 8px;
+  min-height: 400px;
+  padding: 50px 50px;
+  text-align: center;
+  border: 2px solid gray;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.chonkhoa {
+  cursor: pointer;
+  width: 100%;
+  height: 40px;
+  border: none;
+  background: burlywood;
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.chonkhoa:hover {
+  background: rgb(226, 159, 72);
+}
+
+.danhsach:hover {
+  background: #fff8ec;
+  border-color: #d8b27e;
+  box-shadow: 0 12px 28px rgba(70, 60, 40, 0.18);
+}
+
+.noibat {
+  align-self: flex-start;
+  min-height: 460px;
+  border: 2px solid #d8a85f;
+  box-shadow: 0 16px 35px rgba(80, 60, 30, 0.22);
+}
+
+footer {
+  background: #ece7df;
+  border-top: 1px solid rgba(36, 59, 47, 0.15);
+}
+
+.chantrang {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  padding: 50px 80px 35px;
+}
+
+.platforms h3 {
+  margin: 0 0 18px;
+  font-size: 22px;
+  color: #243b2f;
+}
+
+.socials {
+  display: flex;
+  gap: 14px;
+}
+
+.socials a {
+  width: 46px;
+  height: 46px;
+  border-radius: 50%;
+  background: #243b2f;
+  color: white;
+  text-decoration: none;
+  font-size: 23px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.18);
+}
+
+.socials a:hover {
+  background: #d8a85f;
+  color: #243b2f;
+}
+
+.logo {
+  text-align: right;
+}
+
+.logo h2 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 72px;
+  font-style: italic;
+  font-weight: 900;
+  line-height: 0.9;
+  color: #222;
+  letter-spacing: -2px;
+}
+
+.logo h2 span {
+  color: #2f8f5b;
+}
+
+.tagline {
+  margin: 12px 0 40px;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 5px;
+  color: #243b2f;
+}
+
+.copyright {
+  margin: 0;
+  font-size: 15px;
+  color: #333;
+}
+
+.caclopbomon {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  gap: 36px;
+}
+
+.bomon {
+  padding: 50px 40px;
+  background: rgba(211, 211, 211, 0);
+}
+
+.bomon h2 {
+  text-align: center;
+  font-size: 30px;
+  font-weight: 700;
+}
+.chitietbomon {
+  width: 220px;
+  border-radius: 10px;
+  overflow: hidden;
+  text-align: center;
+  cursor: pointer;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+}
+
+.chitietbomon img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.chitietbomon p {
+  font-weight: 700;
+  margin: 12px 0;
+}
+
+.chitietbomon:hover {
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.22);
+  background: #fff8ec;
+}
+
+.schedule {
+  padding: 70px 80px;
+  background: #e0c9a3;
+}
+
+#lotrinh caption {
+  text-align: center;
+  font-size: 34px;
+  color: rgba(0, 0, 0, 0.797);
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+#lotrinh {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  background: white;
+  border-radius: 14px;
+  overflow: hidden;
+  box-shadow: 0 14px 35px rgba(0, 0, 0, 0.14);
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
+#lotrinh th {
+  background: #243b2f;
+  color: white;
+  padding: 18px 20px;
+  font-size: 18px;
+  text-align: center;
+}
+
+#lotrinh td {
+  padding: 16px 20px;
+  text-align: center;
+  font-size: 16px;
+  font-weight: 600;
+  color: #243b2f;
+  border-bottom: 1px solid #e4ded5;
+}
+
+#lotrinh tbody tr:hover {
+  background: #fff8ec;
+}
+
+#lotrinh tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.nghingoi td {
+  background: #d8b27e;
+  color: #243b2f;
+  font-size: 18px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-align: center;
+  padding: 20px;
+}
+
+.thongtinHLV {
+  background: white;
+}
+
+.thongtinHLV > h2 {
+  padding: 50px 50px;
+  text-align: center;
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.thongtinHLV > h2 span {
+  color: #2f8f5b;
+}
+.thongtin {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 28px;
+  padding: 0;
+  margin: 0;
+  max-width: 1500px;
+}
+
+.HLV {
+  width: 270px;
+  height: 400px;
+  background: white;
+  padding: 28px;
+  box-shadow: 0 10px 26px rgba(0, 0, 0, 0.12);
+  border-radius: 14px;
+  border-top: 5px solid #d8b27e;
+  margin-bottom: 50px;
+}
+
+.HLV:hover {
+  box-shadow: 0 18px 38px rgba(0, 0, 0, 0.2);
+  background: #fff8ec;
+}
+
+.HLV h2 {
+  margin: 0 0 18px;
+  padding: 0;
+  font-size: 22px;
+  color: #243b2f;
+  text-align: left;
+}
+
+.HLV h3 {
+  margin: 10px 0;
+  font-size: 16px;
+  color: #243b2f;
+}
+
+.HLV h3 span {
+  color: #2f8f5b;
+  margin-left: 6px;
+}
+
+.HLV p {
+  margin-top: 18px;
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* responsive*/
+
+img {
+  max-width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .thongdiep {
+    width: 92%;
+    gap: 40px;
+  }
+
+  .thongdiep img {
+    width: 420px;
+  }
+
+  #danhsachcacgoi {
+    padding: 30px 40px;
+    justify-content: center;
+  }
+
+  .danhsach {
+    width: 45%;
+  }
+
+  .caclopbomon {
+    flex-wrap: wrap;
+    padding: 0;
+  }
+
+  .chitietbomon {
+    width: 200px;
+  }
+
+  .HLV {
+    width: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .thanhdieuhuong {
+    flex-direction: column;
+    gap: 12px;
+    padding: 12px 16px;
+    text-align: center;
+  }
+
+  #cacthedieuhuong {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 12px;
+  }
+
+  .card {
+    margin-left: 0;
+    font-size: 16px;
+  }
+
+  .brand a {
+    font-size: 36px;
+  }
+
+  .brand span {
+    font-size: 44px;
+  }
+
+  .gioithieu {
+    height: 430px;
+    padding: 0 20px;
+  }
+
+  .hero-logo {
+    font-size: 90px;
+  }
+
+  .thongtinclb h1 {
+    font-size: 32px;
+  }
+
+  .thongtinclb p:not(.hero-logo) {
+    font-size: 16px;
+  }
+
+  #thamgia {
+    padding: 12px 28px;
+    font-size: 17px;
+  }
+
+  .thongdiep {
+    flex-direction: column;
+    margin: 50px auto;
+    gap: 30px;
+    text-align: center;
+  }
+
+  .noidung-thongdiep {
+    width: 100%;
+  }
+
+  .thongdiep img,
+  .anh-thaydoi {
+    width: 100%;
+    max-width: 520px;
+  }
+
+  #truongcaulacbo {
+    font-size: 28px;
+  }
+
+  #danhsachcacgoi {
+    padding: 35px 20px;
+    gap: 24px;
+  }
+
+  .tieude-khoahoc {
+    font-size: 28px;
+  }
+
+  .danhsach {
+    width: 100%;
+    min-height: auto;
+    padding: 35px 25px;
+  }
+
+  .noibat {
+    align-self: auto;
+    min-height: auto;
+  }
+
+  .bomon {
+    padding: 40px 20px;
+  }
+
+  .bomon h2 {
+    font-size: 26px;
+  }
+
+  .caclopbomon {
+    flex-wrap: wrap;
+    gap: 22px;
+    padding: 0;
+  }
+
+  .chitietbomon {
+    width: 45%;
+  }
+
+  .schedule {
+    padding: 45px 15px;
+    overflow-x: auto;
+  }
+
+  #lotrinh {
+    min-width: 700px;
+  }
+
+  #lotrinh caption {
+    font-size: 28px;
+  }
+
+  #lotrinh th,
+  #lotrinh td {
+    padding: 14px 12px;
+    font-size: 15px;
+  }
+
+  .thongtinHLV > h2 {
+    padding: 40px 20px;
+    font-size: 27px;
+  }
+
+  .thongtin {
+    padding: 0 20px;
+  }
+
+  .HLV {
+    width: 100%;
+    max-width: 420px;
+    height: auto;
+  }
+
+  .chantrang {
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 25px;
+  }
+
+  .socials {
+    justify-content: center;
+  }
+
+  .logo {
+    text-align: center;
+  }
+
+  .logo h2 {
+    font-size: 58px;
+  }
+
+  .tagline {
+    margin-bottom: 25px;
+  }
+
+  /* Nếu bạn có làm contact.html theo CSS tôi gửi trước đó */
+  .contact-container {
+    flex-direction: column;
+    width: 92%;
+  }
+
+  .contact-info,
+  .contact-form {
+    width: 100%;
+  }
+
+  .contact-hero h1 {
+    font-size: 34px;
+  }
+}
+
+@media (max-width: 480px) {
+  .brand a {
+    font-size: 32px;
+  }
+
+  .brand span {
+    font-size: 40px;
+  }
+
+  .card {
+    font-size: 15px;
+  }
+
+  .gioithieu {
+    height: 380px;
+  }
+
+  .hero-logo {
+    font-size: 72px;
+  }
+
+  .thongtinclb h1 {
+    font-size: 27px;
+  }
+
+  .thongtinclb p:not(.hero-logo) {
+    font-size: 15px;
+  }
+
+  .thongdiep {
+    margin: 35px auto;
+    padding: 10px;
+  }
+
+  .noidung-thongdiep h2 {
+    font-size: 24px;
+  }
+
+  #truongcaulacbo {
+    font-size: 24px;
+  }
+
+  .tieude-khoahoc {
+    font-size: 24px;
+  }
+
+  .danhsach {
+    padding: 28px 18px;
+  }
+
+  .chonkhoa {
+    font-size: 16px;
+  }
+
+  .chitietbomon {
+    width: 100%;
+  }
+
+  .chitietbomon img {
+    height: 180px;
+  }
+
+  #lotrinh caption {
+    font-size: 24px;
+  }
+
+  .thongtinHLV > h2 {
+    font-size: 24px;
+  }
+
+  .HLV {
+    padding: 24px;
+  }
+
+  .logo h2 {
+    font-size: 48px;
+  }
+
+  .platforms h3 {
+    font-size: 19px;
+  }
+
+  .socials a {
+    width: 42px;
+    height: 42px;
+    font-size: 20px;
+  }
+}
