@@ -1,0 +1,72 @@
+Lỗi chính của đề là dòng này:
+
+this.state.count = this.state.count + 1;
+
+Đây là lỗi cập nhật state trực tiếp trong React Class Component.
+
+Vì sao đây là lỗi?
+
+Giả sử ban đầu:
+
+this.state = {
+  count: 0
+};
+
+Khi bấm nút:
+
+<button onClick={this.handleAddToCart}>
+
+React gọi:
+
+handleAddToCart = () => {
+  this.state.count = this.state.count + 1;
+
+  console.log("Đã tăng:", this.state.count);
+};
+
+JavaScript thực sự đã làm:
+
+count: 0 → 1 → 2 → 3
+
+nên:
+
+console.log(this.state.count);
+
+vẫn có thể in:
+
+1
+2
+3
+4
+
+Nhưng React không biết rằng bạn muốn cập nhật giao diện.
+
+Vì bạn chỉ sửa trực tiếp:
+
+this.state.count = ...
+chứ không sử dụng cơ chế cập nhật state của React.
+
+
+Phải dùng:
+
+this.setState((prevState) => ({
+  count: prevState.count + 1,
+}));
+
+Lúc đó:
+
+Click
+ ↓
+handleAddToCart()
+ ↓
+setState()
+ ↓
+React truyền state trước vào prevState
+ ↓
+count mới = prevState.count + 1
+ ↓
+React cập nhật state
+ ↓
+React render lại component
+ ↓
+UI hiện count mới
