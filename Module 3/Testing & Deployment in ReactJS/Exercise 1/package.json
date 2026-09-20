@@ -1,0 +1,30 @@
+{
+  "name": "my-react-app",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "oxlint",
+    "preview": "vite preview",
+    "test": "jest"
+  },
+  "dependencies": {
+    "anxious": "^0.0.0-security",
+    "axios": "^1.20.0",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8"
+  },
+  "devDependencies": {
+    "@types/jest": "^30.0.0",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "@vitejs/plugin-react": "^6.1.1",
+    "jest": "^30.5.2",
+    "oxlint": "^1.81.0",
+    "ts-jest": "^29.4.12",
+    "typescript": "^6.0.3",
+    "vite": "^8.3.0"
+  }
+}
